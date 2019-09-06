@@ -26,5 +26,8 @@
         "psr-4": {
             "demonking\\message\\": ""
         }
+    },
+	"extra": {
+        "bootstrap": "demonking\\message\\Bootstrap"
     }
 }

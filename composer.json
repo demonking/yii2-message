@@ -24,7 +24,10 @@
 	},
     "autoload": {
         "psr-4": {
-            "demonking\\message\\": ""
+            "demonking\\message\\": "src/Message"
         }
+    },
+	"extra": {
+        "bootstrap": "demonking\\message\\Bootstrap"
     }
 }

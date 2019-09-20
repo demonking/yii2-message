@@ -1,13 +1,5 @@
 <?php
 
-/*
- * This file is part of the Dektrium project.
- *
- * (c) Dektrium project <http://github.com/dektrium/>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
 
 namespace demonking\message;
 
@@ -17,12 +9,6 @@ use yii\console\Application as ConsoleApplication;
 use yii\i18n\PhpMessageSource;
 use yii\web\GroupUrlRule;
 
-/**
- * Bootstrap class registers module and user application component. It also creates some url rules which will be applied
- * when UrlManager.enablePrettyUrl is enabled.
- *
- * @author Denis Warsow <denis.warsow@xisio.com>
- */
 class Bootstrap implements BootstrapInterface
 {
     public function bootstrap($app)
@@ -52,14 +38,16 @@ class Bootstrap implements BootstrapInterface
 				
 				$app->urlManager->addRules([$rules],true);
 				
-			}/*
+			}
+			/*
             if (!isset($app->get('i18n')->translations['message*'])) {
                   $app->get('i18n')->translations['message*'] = [
                       'class' => PhpMessageSource::className(),
                       'basePath' => __DIR__ . '/messages',
                       'sourceLanguage' => 'en-US'
                   ];
-			}*/
+			}
+			*/
 		}
 
     }
